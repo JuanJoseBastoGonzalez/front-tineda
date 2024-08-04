@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { navigate } from 'svelte-routing';
-  
+  import  './Login.css'
     let username = '';
     let password = '';
     let token = '';
@@ -47,24 +47,22 @@ alert("Ingrese un usuario ")
     });
   </script>
   
-  <main>
-    <h1>Login</h1>
+  <main class="pg">
+    <h1 class="tp">Login</h1>
     <form on:submit|preventDefault={login}>
         <label>
-            Username:
-            <input type="text" bind:value={username} />
+            
+            <input class="it" type="text" bind:value={username} placeholder="Username" />
         </label>
         <br />
         <label>
-            Password:
-            <input type="password" bind:value={password} />
+            
+            <input class="it" type="password" bind:value={password} placeholder="password" />
         </label>
         <br />
         <button type="submit">Login</button>
     </form>
   
-    {#if token}
-        <p>Token: {token}</p>
-    {/if}
-  </main>
+ 
+</main>
   
