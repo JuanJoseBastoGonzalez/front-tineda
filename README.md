@@ -45,6 +45,8 @@ npm init vite primer-svelte --template svelte
 cd primer-svelte
 npm install
 
+npm install -D less
+
 # Para iniciar el frontend
 npm run dev
 ```
@@ -70,4 +72,3 @@ const user = {
 
 ---
 
-Espero que esta versión sea más clara y fluida. ¡Déjame saber si necesitas alguna otra corrección!
