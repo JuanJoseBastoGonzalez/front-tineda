@@ -1,4 +1,6 @@
 #                   **FRON-PROYECTO**
+!(logos/Ts.bmp) !(logos/css.png) !(logos/html.png) 
+!(logos/javascript.webp) !(logos/node.webp)
 
 ---
 
