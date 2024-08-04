@@ -1,0 +1,65 @@
+<script>
+    import { onMount } from 'svelte';
+    import { navigate } from 'svelte-routing';
+  
+    let username = '';
+    let password = '';
+    let token = '';
+  
+    async function login() {
+        try {
+            const response = await fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            });
+  
+            if (!response.ok) {
+                const errorData = await response.json();
+                console.error('Error:', errorData.message);
+                return;
+            }
+  
+            const data = await response.json();
+            if (data.token) {
+                token = data.token;
+                localStorage.setItem('token', token); // Guardar el token en localStorage
+                console.log('JWT Token:', token);
+                navigate('/Dashboard'); // Redirige al Dashboard después del inicio de sesión
+            } else {
+                console.error('Token no encontrado en la respuesta');
+            }
+        } catch (error) {
+            console.error('Error en la solicitud:', error);
+        }
+    }
+  
+    onMount(() => {
+        // Recuperar el token de localStorage si existe
+        token = localStorage.getItem('token') || '';
+    });
+  </script>
+  
+  <main>
+    <h1>Login</h1>
+    <form on:submit|preventDefault={login}>
+        <label>
+            Username:
+            <input type="text" bind:value={username} />
+        </label>
+        <br />
+        <label>
+            Password:
+            <input type="password" bind:value={password} />
+        </label>
+        <br />
+        <button type="submit">Login</button>
+    </form>
+  
+    {#if token}
+        <p>Token: {token}</p>
+    {/if}
+  </main>
+  
