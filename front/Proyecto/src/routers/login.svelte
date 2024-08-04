@@ -7,6 +7,11 @@
     let token = '';
   
     async function login() {
+        if (username == ""){
+alert("Ingrese un usuario ")
+        }else if (password == "" ){
+            alert("Ingrese una contraseña")
+        }else{
         try {
             const response = await fetch('http://localhost:3000/login', {
                 method: 'POST',
@@ -35,7 +40,7 @@
             console.error('Error en la solicitud:', error);
         }
     }
-  
+}
     onMount(() => {
         // Recuperar el token de localStorage si existe
         token = localStorage.getItem('token') || '';
