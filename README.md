@@ -1,5 +1,5 @@
 #                   **FRON-PROYECTO**
-<img src="logos/Ts.bmp" alt="Descripción de la imagen" width="80" height="80"><img src="logos/css.png" alt="Descripción de la imagen" width="80" height="80"><img src="logos/html.png" alt="Descripción de la imagen" width="80" height="80"><img src="logos/javascript.webp" alt="Descripción de la imagen" width="80" height="80"><img src="logos/node.webp" alt="Descripción de la imagen" width="80" height="80"><img src="logos/svelte.png" alt="Descripción de la imagen" width="80" height="80">
+<img src="logos/Ts.bmp" alt="Descripción de la imagen" width="80" height="80"><img src="logos/css.png" alt="Descripción de la imagen" width="80" height="80"><img src="logos/html.png" alt="Descripción de la imagen" width="80" height="80"><img src="logos/javascript.webp" alt="Descripción de la imagen" width="80" height="80"><img src="logos/node.webp" alt="Descripción de la imagen" width="80" height="80"><img src="logos/svelte.png" alt="Descripción de la imagen" width="80" height="80"><img src="logos/less.png" alt="Descripción de la imagen" width="80" height="80">
 
 
 
