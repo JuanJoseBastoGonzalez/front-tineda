@@ -1,4 +1,13 @@
 
 .m0{
     margin: 0;
+  
+}
+.fcb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cp{
+    cursor: pointer;
 }

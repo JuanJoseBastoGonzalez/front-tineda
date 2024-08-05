@@ -68,7 +68,7 @@
                 />
             </label>
             <br />
-            <button class="submit" type="submit">Login</button>
+            <button class="submit cp" type="submit">Login</button>
         </form>
     </div>
 </main>

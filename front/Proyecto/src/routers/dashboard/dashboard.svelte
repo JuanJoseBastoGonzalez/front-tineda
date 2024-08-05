@@ -4,16 +4,18 @@
   import Navbar from '../../components/nav.svelte'
   import { show } from '../../stores/Stores';
   import Sidebar from "../../components/Sidebar.svelte";
+  import "./Dashboard.css"
   </script>
 <div class="m0">
   <div>
     <Navbar/>
   </div> 
-  <div>
+  <div class="f">
     {#if $show}
     <Sidebar/>
     {/if}
+    fsdafasdfasf
   </div>
-  <h1>About</h1>
-  <a  href ="/" use:link>fsdfs</a>
+<!-- 
+  <a  href ="/" use:link>fsdfs</a> -->
 </div>
