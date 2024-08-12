@@ -12,6 +12,14 @@
 
 Para el front de este proyecto se utilizó el framework Svelte, y Node.js para la validación de usuarios y el envío del token necesario para el acceso al dashboard.
 
+Colaboradores:
+
+Sara Lucia Lozano Rueda
+
+Johan Alexander Garcia Campos
+
+Juan Jose Basto Gonzalez
+
 ## Comandos
 
 
@@ -25,6 +33,8 @@ cd jwt-auth-server
 npm init -y
 
 npm install express jsonwebtoken body-parser dotenv
+
+npm install sequelize mysql2
 
 # Para ejecutar el servidor
 node server.js
@@ -47,11 +57,18 @@ nvm use --lts
 
 node -v
 
+#Pegar en la bash cundo se este en la ruta principal del programa
+npm install axios
+
+npm install -D less
+
+
+#para crear proyectos con svelte
 npm init vite primer-svelte --template svelte
 cd primer-svelte
 npm install
 
-npm install -D less
+
 
 # Para iniciar el frontend
 npm run dev
@@ -66,7 +83,7 @@ npm run dev
 
 ## Información
 
-Las credenciales se pueden cambiar desde el servidor Node.js. Se crea un solo usuario según la petición del usuario:
+Las credenciales se pueden cambiar desde el servidor Node.js. Se crea un solo usuario según la petición del usuario: (Estas creenciales se usan si y solo si se esta accidiendo con node.js)
 
 ```js
 const user = {
